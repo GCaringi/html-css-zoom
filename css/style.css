@@ -20,21 +20,89 @@
 /*---------
    Commons
 -----------*/
-
+body{
+    background-color: #111111;
+    color: #fff;
+}
 
 
 
 /*---------
     Buttons
 -----------*/
+button{
+    color: inherit ;
+    border: none;
+    cursor: pointer;
+}
 
+.btn{
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
+.btn-rec{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #cecece;
+    border-radius: 50%;  
+}
+
+.btn-view{
+    background-color: #101111;
+    padding: 5px 10px;
+}
+
+.rec-point{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eb534c;
+    border-radius: 50%;
+    
+}
 
 
 /*---------
     Typo
 -----------*/
 
-
+.fa-shield{
+    font-size: 24px;
+    color: #67d669;
+}
 /*---------
     Header
 -----------*/
+
+/* Control recording button */
+ header{
+     width: 100%;
+     display: flex;
+     height: 50px;
+     padding: 0px 10px;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+.recording-btn{
+    display: flex;
+    column-gap: 10px;
+}
+
+.recording-btn button{
+    vertical-align: middle;
+}
+
+.recording-ctrl{
+    background-color: #101111;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* View choice button */
