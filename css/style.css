@@ -26,7 +26,6 @@ body{
 }
 
 .container{
-    background-color: red;
     max-width: 90%;
     height: 100%;
     margin: auto;
@@ -95,6 +94,7 @@ button{
      padding: 0px 10px;
      align-items: center;
      justify-content: space-between;
+     margin-bottom: 50px;
  }
 
 .recording-btn{
@@ -124,7 +124,7 @@ Style rules in buttons css area
 -----------*/
 
 main{
-    height: calc(100vh - (108px + 50px));
+    height: calc(100vh - (100px + 50px + 50px));
 }
 
 .grid{
@@ -133,7 +133,7 @@ main{
     justify-content: space-between;
     row-gap: 10px;
     overflow-y: scroll;
-
+    padding-bottom: 60px;
 }
 
 .grid-cell{
@@ -151,5 +151,6 @@ main{
 -----------*/
 
 footer{
-    height: 108px;
+    background-color: #1b1b1b;
+    height: 100px;
 }
