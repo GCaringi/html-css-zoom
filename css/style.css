@@ -25,6 +25,14 @@ body{
     color: #fff;
 }
 
+.container{
+    background-color: red;
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+
+}
+
 
 
 /*---------
@@ -47,12 +55,7 @@ button{
     width: 30px;
     height: 30px;
     background-color: #cecece;
-    border-radius: 50%;  
-}
-
-.btn-view{
-    background-color: #101111;
-    padding: 5px 10px;
+    border-radius: 50%;
 }
 
 .rec-point{
@@ -64,7 +67,11 @@ button{
     transform: translate(-50%, -50%);
     background-color: #eb534c;
     border-radius: 50%;
-    
+}
+
+.btn-view{
+    background-color: #101111;
+    padding: 5px 10px;
 }
 
 
@@ -97,6 +104,7 @@ button{
 
 .recording-btn button{
     vertical-align: middle;
+    margin-right: 10px;
 }
 
 .recording-ctrl{
@@ -105,4 +113,43 @@ button{
     border-radius: 5px;
 }
 
-/* View choice button */
+/*--------------------------------
+    View choice button 
+Style rules in buttons css area
+--------------------------------*/
+
+
+/*---------
+    Main
+-----------*/
+
+main{
+    height: calc(100vh - (108px + 50px));
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    overflow-y: scroll;
+
+}
+
+.grid-cell{
+    width: calc((100% - 50px) / 6);
+    height: 200px;
+    background-image: url("https://picsum.photos/id/237/200/300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/*---------
+   Footer
+-----------*/
+
+footer{
+    height: 108px;
+}
